@@ -1,20 +1,37 @@
 #include <stdio.h>
 
-/**
- * main - Entry point
- *
- * Return: 0 (Success)
-*/
-int main(void)
-{
-	int ch = 'a'
-	while (ch <= 'z');
-	{
-		putchar(ch);
-		ch++;
-	}
-	putchar(\n);
 
-	return (0);
+
+/**
+
+* main - prints alphabets
+
+*in lower case
+
+* Return: int 0
+
+*/
+
+
+
+int main(void)
+
+{
+
+		int letter;
+
+
+
+			for (letter = 97; letter < 123; letter++)
+
+					{
+
+								putchar(letter);
+
+									}
+
+										putchar(10);
+
+											return (0);
 
 }
