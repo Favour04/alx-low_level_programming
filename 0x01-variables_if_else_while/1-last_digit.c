@@ -20,19 +20,19 @@ int main(void)
 	/* Get last digit of numbers */
 	l = n % 10;
 	/* Check what is in the last digit and print result */
-	if (n > 5)
+	if (l > 5)
 	{
 		printf("Last digit of %d is %d and is greater than 5\n", n, l);
 	}
 
-	else if (n == 0)
+	else if (l == 0)
 	{
-		printf("Last digit  of %d is %d and is equal to 0\n", n, l);
+		printf("Last digit  of %d is %d and is 0\n", n, l);
 	}
 
 	else
 	{
-		printf("Last digit of %d is %d and is less than and 6 and not 0\n", n, l);
+		printf("Last digit of %d is %d and is 0\n", n, l);
 	}
 
 	return (0);
