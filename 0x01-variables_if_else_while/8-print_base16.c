@@ -7,12 +7,15 @@
 */
 int main(void)
 {
-	unsigned int al;
+	int hex;
 
-	for (al = 122; al < 96; al--)
+	for (hex = 48; hex < 103; hex++)
 
 	{
-		putchar(al);
+		if ((hex > 57) & (hex < 97))
+
+		continue;
+		putchar(hex);
 	}
 
 	putchar('\n');
