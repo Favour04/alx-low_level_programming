@@ -1,13 +1,13 @@
 #include "main.h"
 /**
  * _putchar - Entry point
- * 
+ *
  *@char: print _putchar
  *
  * Return: 0 (Success)
 */
-int _putchar(char c);
-{ 
+int _putchar(void);
+{
 	char a[] = "_putchar";
 	int b;
 
@@ -15,8 +15,7 @@ int _putchar(char c);
 	{
 		_putchar(a[b])
 	}
-
-	_putchar ('\n')
+		_putchar ('\n')
 
 	return (0);
 
