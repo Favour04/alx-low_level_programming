@@ -6,17 +6,18 @@
 * Return: int 0
 */
 int main(void)
-
 {
-	int letter;
+	int alp;
 
-	for (letter = '97'; letter < '123'; letter++)
+	for (alp = 97; alp < 123; alp++)
 
 	{
-		putchar(letter);
+		putchar(alp);
 	}
-		putchar(10);
+
+	putchar('\n');
 
 	return (0);
+
 
 }
