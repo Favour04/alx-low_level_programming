@@ -3,7 +3,7 @@
 /**
  * main - Entry point
  *
- * to check main
+ * to check mai and assemblen
  * Return: 0 (Success)
 */
 int main(void)
