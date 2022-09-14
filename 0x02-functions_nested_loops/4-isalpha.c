@@ -1,26 +1,35 @@
 #include "main.h"
 
 /**
- * _isalpha - check numbers casing
+ * print_sign - check numbers casing
  *
- * @c: var name
+ * @n: var name
  * Return: Always 0 success
 */
-int _isalpha(int c)
+int print_sign(int n)
 {
 	/* declare local variable */
 
-	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+	if (n > 0)
 	{
+		_putchar('+');
 		return (1);
 
 	}
 
-	else
+	else if (n == 0)
 	{
+		_putchar('0');
 		return (0);
 
 	}
+
+	else 
+	{
+		_putchar('-');
+		return (-1);
+	}
+
 
 	_putchar('\n');
 
