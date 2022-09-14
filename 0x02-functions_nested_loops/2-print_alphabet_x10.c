@@ -10,14 +10,8 @@ void print_alphabet_x10(void)
 {
 	int i = 0;
 	int c;
-	int start[]
 
-	while (i < 10)
-	{
-		i++;
-	}
-
-		for start[i](c = 97; c < 123; c++)
+		for (c = 97; c < 123; c++)
 		{
 			_putchar(c);
 			c++;
