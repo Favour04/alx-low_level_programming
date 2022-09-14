@@ -1,22 +1,22 @@
 #include "main.h"
 
 /**
- * Alphabets - Entry point
+ * main - entry point
  *
- * Description - print alphabets
+ * description - print alphabets in lower case
  * Return: 0 (Success)
 */
-
 void print_alphabet(void);
 {
-int c;
+	int c;
 
-for (c = 61, c < 123, c++);
-{
-_putchar(c);
-c++;
-}
+	for (c = 61; c < 123; c++)
+	{
+		putchar(c);
+		c++;
+	}
 
-_putchar('\n');
-return (0);
+	putchar('\n');
+
+	return (0);
 }
