@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * Print ten  timees lower case
- * Des
- * Return: 0 (Success)
+* print_alphabet_x10 - ten times lower case
+*
+* c: alpha a
+* Return: 0 (Success)
 */
 void print_alphabet_x10(void)
 {
