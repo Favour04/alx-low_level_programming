@@ -1,23 +1,22 @@
 #include "main.h"
 
 /**
- * print alphabets - entry point
+ * print_alphabet - print alphabet a to z
  *
- * description - print_alphabet: in lower case
+ * c: the character to point
  * Return: Always 0 (Success)
  */
-
-void print_alphabet(void);
+void print_alphabet(void)
 {
+	int c;
 
-int c;
+	for (c = 'a'; c <= 'z'; c++)
+	{
+		_putchar(c);
 
-for (c = 'a'; c <= 'z'; c++)
-{
-_putchar(c);
-}
-_putchar('\n');
+	}
 
-return;
+	_putchar('\n');
+	return;
 
 }
