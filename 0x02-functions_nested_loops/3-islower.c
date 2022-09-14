@@ -10,28 +10,11 @@ int _islower(int c)
 {
 	/* declare local variable */
 
-	if (_islower(c = 'H')
+	if (_islower(c)
 	{
 		putchar(1);
-	}
-	else
-	{
-		putchar(0);
 	}
 
-	if (_islower(c = 'o')
-	{
-		putchar(1);
-	}
-	else
-	{
-		putchar(0);
-	}
-
-	if (_islower(c = '108')
-	{
-		putchar(1);
-	}
 	else
 	{
 		putchar(0);
