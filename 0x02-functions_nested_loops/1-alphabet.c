@@ -1,22 +1,22 @@
 #include "main.h"
 
 /**
-* Alphabets - Entry point
-*
-* Description - print alphabets
-* Return: 0 (Success)
+ * Alphabets - Entry point
+ *
+ * Description - print alphabets
+ * Return: 0 (Success)
 */
+
 void print_alphabet(void);
 {
-	int c;
+int c;
 
-	for (c = 61, c < 123, c++);
-	{
-		_putchar(c);
-		c++;
-	}
+for (c = 61, c < 123, c++);
+{
+_putchar(c);
+c++;
+}
 
-	_putchar('\n');
-
-	return (0);
+_putchar('\n');
+return (0);
 }
