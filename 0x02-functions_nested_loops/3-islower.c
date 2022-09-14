@@ -10,7 +10,7 @@ int _islower(int c)
 {
 	/* declare local variable */
 
-	if (_islower(c)
+	if (_islower(c))
 	{
 		putchar(1);
 	}
