@@ -20,7 +20,7 @@ int _islower(int c)
 		_putchar(0);
 	}
 
-	putchar('\n');
+	_putchar('\n');
 
 	return (0);
 }
