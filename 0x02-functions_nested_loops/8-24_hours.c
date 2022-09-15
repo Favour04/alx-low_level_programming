@@ -23,6 +23,6 @@ _putchar('0' + (min % 10));
 _putchar('\n');
 }
 min = 0;
-hours++
+hours++;
 }
 }
