@@ -10,7 +10,7 @@ int _isalpha(int c)
 {
 	/* declare local variable */
 
-	if (_isalpha(c))
+	if (n = 0; n <= 225)
 	{
 		return (1);
 
