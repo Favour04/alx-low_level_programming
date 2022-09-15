@@ -1,16 +1,16 @@
 #include "main.h"
 
 /**
- * _islower - check numbers casing
+ * _isalpha - check numbers casing
  *
  * @c: var name
  * Return: Always 0 success
 */
-int print_sign(int n)
+int _isalpha(int c)
 {
 	/* declare local variable */
 
-	if (n >= 'a' && n <= 'z')
+	if (_isalpha(c))
 	{
 		return (1);
 
