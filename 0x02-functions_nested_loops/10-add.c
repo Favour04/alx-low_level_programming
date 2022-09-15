@@ -2,23 +2,11 @@
 
 /**
  * add - add two integer value
- *
- * Return 0
+ * @n: vr
+ * @n1: var
+ * Return: sum of two num
  */
- int add(int n, int n1)
- {
-	 int add;
-	 add = (n + n1);
-
-	 if (add > 0)
-	 {
-		 _putchar(add);
-		 return (add);
-	 }
-	 else if (add < 0)
-	 {
-		 _putchar(-add);
-		 return (add);
-	 }
-	 _putchar('\n');
- }
+int add(int n, int n1)
+{
+	return (n + n1);
+}
