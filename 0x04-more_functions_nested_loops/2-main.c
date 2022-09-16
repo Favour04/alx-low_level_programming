@@ -8,11 +8,15 @@
 */
 int main(void)
 {
-	int c;
-	c = 'A';
-	c = 'a';
+	int a;
+	int b;
 
-	_isupper(c);
+	
+	a = 5;
+	b = 3;
+
+
+	mul(a,b);
 
 	return (0);
 }
