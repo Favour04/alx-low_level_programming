@@ -1,7 +1,6 @@
 #include "main.h"
 /**
  * print_numbers - prinr num 1 to 9
- * @n: the num to be checked
  * Return void
 */
 void print_numbers(void)
