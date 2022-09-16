@@ -9,10 +9,9 @@
 int main(void)
 {
 	int n;
+	n = 48;
 
-	n = 48
-
-	print_numbers(void);
+	print_numbers(n);
 
 	return (0);
 }
