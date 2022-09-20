@@ -2,21 +2,12 @@
 
 /**
  * reset_to_98 - pointer to reset int to 98
- *
- * Return: 0 (success)
+ * @n: pointer
 */
 
-int reset_to_98(void)
+int reset_to_98(int *n)
 {
-	int i;
-	int *id;
+	*n = 98;
 	
-	id = &i;
-	i = 12;
-	*id = 98;
-
-	putchar(i);
-	putchar('\n');
-
 	return (0);
 }
