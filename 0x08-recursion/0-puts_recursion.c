@@ -1,6 +1,6 @@
 #include "main.h"
 
-/*
+/**
  * _puts_recursion - print a sting
  * Description: print string using recursion
  * @s: string to be printed to std
