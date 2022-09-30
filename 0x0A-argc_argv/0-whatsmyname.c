@@ -4,7 +4,7 @@
 /**
  * main - check the code
  * @argc: aurgument count
- * @agrv: argument veactor
+ * @argv: argument veactor
  * Return: Always 0
 */
 int main(int argc, char *argv[])
