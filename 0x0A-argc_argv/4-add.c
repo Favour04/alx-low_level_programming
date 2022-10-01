@@ -3,10 +3,10 @@
 #include <stdbool.h> /* lib for bool data type */
 
 /**
- * bool - check the num
+ * is_num - check the num
  * @argvv: aurgument count
- * Return: true if entire string is a number 
-*/
+ * Return: true if entire string is a number
+**/
 bool is_num(char *argvv)
 {
 	int n;
@@ -23,7 +23,7 @@ bool is_num(char *argvv)
  * @argc: argument count
  * @argv: argument vector
  * Return: Always 0
-*/ 
+*/
 int main(int argc, char *argv[])
 {
 	int i = 1;
