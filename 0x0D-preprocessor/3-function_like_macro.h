@@ -3,7 +3,6 @@
 
 #include <stdio.h>
 
-int abs(int x);
-#define ABS(x) abs(x)
+#define ABS(x) ((x) < (-1) ? -(x) : (x))
 
 #endif /* MAIN_H */
