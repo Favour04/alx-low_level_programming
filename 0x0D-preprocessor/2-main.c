@@ -4,7 +4,7 @@
 /**
  * main - check the code
  *
- * Retunn: Always 0.
+ * Return: Always 0.
  */
 int main(void)
 {
