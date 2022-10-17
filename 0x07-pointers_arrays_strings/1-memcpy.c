@@ -6,7 +6,7 @@
  * @*src: string to be printed
  * @*dest: pointer to src
  * @n: num of bytes
- * Return: pointer to dest 
+ * Return: pointer to dest var
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {	
