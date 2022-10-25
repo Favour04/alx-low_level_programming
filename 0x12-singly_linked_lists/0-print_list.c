@@ -16,7 +16,7 @@ size_t print_list(const list_t *h)
 	{
 		if (h->str == NULL)
 		{
-			printf("[0] (nill)\n");
+			printf("[%d] %s\n", 0,"(nill)");
 		}
 		else
 		{
