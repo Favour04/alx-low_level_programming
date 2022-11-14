@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * binary_to_unit - convert binary to unit
+ * binary_to_uint - convert binary to unit
  * @b: binary to convert
  * Return: unit
  */
