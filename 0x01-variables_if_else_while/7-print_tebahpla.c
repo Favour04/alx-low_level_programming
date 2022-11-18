@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdio.h>
 
 /**
 * main - prints alphabets
@@ -7,12 +8,14 @@
 */
 int main(void)
 {
-	unsigned int al;
+	char al;
 
-	for (al = 122; al < 96; al--)
+	al = 122;
 
+	while (al != 96)
 	{
 		putchar(al);
+		al--;
 	}
 
 	putchar('\n');
