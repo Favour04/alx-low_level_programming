@@ -11,7 +11,6 @@ int main(void)
 	int j;
 	int k;
 	int i;
-	int p;
 
 	i = 48;
 	k = 49;
