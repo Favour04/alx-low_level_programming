@@ -22,10 +22,18 @@ int main(void)
 		{
 			putchar(i);
 			putchar(j);
-			putchar(',');
-			putchar(' ');
 
-			j++;
+			if (i == 56 && j == 57)
+			{
+				j++;
+			}
+			else
+			{
+				putchar(',');
+				putchar(' ');
+				
+				j++;
+			}
 		}
 
 		k++;
