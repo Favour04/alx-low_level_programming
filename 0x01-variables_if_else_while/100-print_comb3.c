@@ -3,31 +3,34 @@
 /**
  * main - print number combo
  *
- * Return - Always 0.
+ * Return: Always 0
  */
 
 int main(void)
 {
 	int j;
 	int k;
-	
-	k = 48;
-	
-	while (k != 58)
+	int i;
+	int p;
+
+	i = 48;
+	k = 49;
+
+	while (i < 57)
 	{
-		j = 48;
-		
-		while (j != 58)
+		j = k;
+		while (j <= 57)
 		{
-			putchar(k);
+			putchar(i);
 			putchar(j);
 			putchar(',');
 			putchar(' ');
 
 			j++;
 		}
-		
+
 		k++;
+		i++;
 	}
 	putchar('\n');
 
