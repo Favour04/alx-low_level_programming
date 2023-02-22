@@ -11,6 +11,7 @@
 
 char *_strchr(char *s, char c)
 {
+	char *a;
 
 	if (s == NULL)
 	{
@@ -21,7 +22,8 @@ char *_strchr(char *s, char c)
 	{
 		if (*s == c)
 		{
-			return (s);
+			a = s;
+			return (a);
 		}
 		s++;
 	}
