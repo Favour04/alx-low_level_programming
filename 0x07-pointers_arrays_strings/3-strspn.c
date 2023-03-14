@@ -3,9 +3,9 @@
 /**
  * _strspn - returns the number of bytes in the initial segment of s
  * which consist only of bytes from accept
- * @s
- * @accept
- * return
+ * @s: string to count
+ * @accept: strimg to compare
+ * Return: bytes of coresponding char
  */
 
 unsigned int _strspn(char *s, char *accept)
@@ -25,7 +25,7 @@ unsigned int _strspn(char *s, char *accept)
 
 			if (*s == f)
 			{
-				i++; 
+				i++;
 			}
 
 			s++;
