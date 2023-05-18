@@ -1,4 +1,4 @@
-#include "list.h"
+#include "lists.h"
 /**
  * print_dlistint - function to print data in double linked list
  * @h: pointer to head of list
