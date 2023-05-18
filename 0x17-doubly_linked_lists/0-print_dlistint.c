@@ -2,7 +2,7 @@
 /**
  * print_dlistint - function to print data in double linked list
  * @h: pointer to head of list
- *
+ * Return: legnth of list
  */
 size_t print_dlistint(const dlistint_t *h)
 {
@@ -12,7 +12,7 @@ size_t print_dlistint(const dlistint_t *h)
 	current = (dlistint_t *) h;
 	i = 0;
 
-	while (current != NULL )
+	while (current != NULL)
 	{
 		printf("%d\n", current->n);
 		current = current->next;
