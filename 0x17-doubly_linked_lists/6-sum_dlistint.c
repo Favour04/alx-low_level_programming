@@ -1,5 +1,10 @@
 #include "lists.h"
 
+/**
+ * sum_dlistint - funtion to return sum of lists
+ * @head: pointer to head of list
+ * Return: the sum of list
+ */
 int sum_dlistint(dlistint_t *head)
 {
 	int sum;
