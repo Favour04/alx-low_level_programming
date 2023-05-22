@@ -6,7 +6,7 @@
  */
 int negative(dlistint_t *cur)
 {
-	int j;
+	unsigned int j;
 
 	j = 0;
 
@@ -26,7 +26,7 @@ int negative(dlistint_t *cur)
  */
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
-	unsigned int i;
+	unsigned int i = 0;
 	dlistint_t *current = *h, *cur, *new;
 
 	if ((int) idx < 0)
@@ -35,15 +35,10 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		i = negative(*h);
 		idx += i;
 	}
-	i = negative(*h);
-	if (idx > i)
-	{
-		return (NULL);
-	}
-	i = 0;
+
 	while (current != NULL)
 	{
-		if (i == (idx - 1) && i != 0)
+		if (i == (idx - 1))
 		{
 			cur = current;
 		}
@@ -51,12 +46,15 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		{
 			new = add_dnodeint(&current, n);
 			if (i == 0)
+			{
 				*h = new;
+				return (new);
+			}
 			new->prev = cur;
 			cur->next = new;
 			return (new);
 		}
-		else if (current->next == NULL)
+		else if (current->next == NULL && (int) idx == (negative(*h) + 1))
 		{
 			new = add_dnodeint_end(&current, n);
 			return (new);
