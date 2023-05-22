@@ -2,13 +2,11 @@
 /**
  * negative - add length of list with negative number
  * @cur: list
- * @i: negative number
  * Return: sum
  */
 int negative(dlistint_t *cur)
 {
 	int j;
-
 	j = 0;
 
 	while (cur != NULL)
@@ -17,20 +15,6 @@ int negative(dlistint_t *cur)
 		j++;
 	}
 	return (j);
-}
-
-/**
- * zero - hadle first function when the value of idx is 0
- * @temp: pointer to head
- * @n: data
- * Return: pointer to new node
- */
-dlistint_t *zero(dlistint_t *temp, int n)
-{
-	dlistint_t *new;
-
-	new = add_dnodeint(&temp, n);
-	return (new);
 }
 /**
  * insert_dnodeint_at_index - function to add node to a specified index
@@ -41,35 +25,32 @@ dlistint_t *zero(dlistint_t *temp, int n)
  */
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
-	unsigned int i = 0;
+	unsigned int i;
 	dlistint_t *current = *h, *cur, *new;
 
 	if ((int) idx < 0)
 	{
 
-		idx += negative(*h);
+		i = negative(*h);
+		idx += i;
 	}
-	if ((negative(*h) < (int) idx))
+	i = negative(*h);
+	if (idx > i)
 	{
 		return (NULL);
 	}
-
-	if ((int) idx == 0)
-	{
-		new = zero(*h, n);
-		*h = new;
-	}
-
+	i = 0;
 	while (current != NULL)
 	{
-		if (i == (idx - 1))
+		if (i == (idx - 1) && i != 0)
 		{
 			cur = current;
 		}
-
-		if (i == (idx == 1))
+		if (i == idx)
 		{
 			new = add_dnodeint(&current, n);
+			if (i == 0)
+				*h = new;
 			new->prev = cur;
 			cur->next = new;
 			return (new);
