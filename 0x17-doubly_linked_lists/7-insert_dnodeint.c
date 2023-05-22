@@ -7,6 +7,7 @@
 int negative(dlistint_t *cur)
 {
 	int j;
+
 	j = 0;
 
 	while (cur != NULL)
