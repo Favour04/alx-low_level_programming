@@ -5,7 +5,7 @@
  * @i: negative number
  * Return: sum
  */
-int negative(dlistint_t *cur, unsigned int i)
+int negative(dlistint_t *cur)
 {
 	int j;
 
@@ -16,8 +16,7 @@ int negative(dlistint_t *cur, unsigned int i)
 		cur = cur->next;
 		j++;
 	}
-	i += j;
-	return (i);
+	return (j);
 }
 
 /**
@@ -47,7 +46,12 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 
 	if ((int) idx < 0)
 	{
-		idx = negative(*h, idx);
+
+		idx += negative(*h);
+	}
+	if ((negative(*h) < (int) idx))
+	{
+		return (NULL);
 	}
 
 	if ((int) idx == 0)
