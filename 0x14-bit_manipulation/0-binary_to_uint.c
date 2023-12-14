@@ -12,16 +12,16 @@ unsigned int binary_to_uint(const char *b)
 
 	n = strlen(b) - 1;
 	num = 0;
-	
+
 	while (*b != '\0')
 	{
 		if (*b != '1' && *b != '0')
-		       return (0);
+			return (0);
 
 		num += (*b - '0') << n;
 		b++;
 		n--;
 	}
-	
+
 	return (num);
 }

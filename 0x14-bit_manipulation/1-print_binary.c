@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * print_binary.c - print a digit in binary
- * @n - digit to print
+ * print_binary - print a digit in binary
+ * @n: digit to print
  *
  * Return: 1 if sucessful 0 if failed
  */
