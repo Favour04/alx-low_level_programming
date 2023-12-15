@@ -9,13 +9,6 @@
 int clear_bit(unsigned long int *n, unsigned int index)
 {
 	int bit;
-	unsigned long zero = 0;
-
-	if (*n < zero)
-	{
-		printf("Invalid index\n");
-		return (-1);
-	}
 
 	bit = ~(1 << index);
 
