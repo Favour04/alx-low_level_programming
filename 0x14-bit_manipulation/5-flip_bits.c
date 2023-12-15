@@ -1,9 +1,9 @@
 #include <stdio.h>
 /**
- * flip_bits - fjfikjf
- * @n: dkfjf
- * @m: dkldjd
- * Return: fkldjkf
+ * flip_bits - flip a string
+ * @n: number
+ * @m: secomt number
+ * Return: count
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
