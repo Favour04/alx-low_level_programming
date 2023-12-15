@@ -12,7 +12,7 @@ int main(void)
 		    set_bit(&n, 5);
 		        printf("%lu\n", n);
 			    n = 2048;
-			        set_bit(&n, 2000);
+			        set_bit(&n, 200);
 				    printf("%lu\n", n);
 				        n = 98;
 					    set_bit(&n, 0);
