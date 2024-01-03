@@ -9,14 +9,12 @@ void print_rev(char *s)
 {
 	int len = 0;
 	int i;
-
 	/* iterate to find length of string and point to last character */
 	while (*s != '\0')
 	{
 		len++;
 		++s;
 	}
-
 	/* go back to character before null character */
 	for (i = len; i > 0; i--)
 	{
@@ -25,5 +23,4 @@ void print_rev(char *s)
 	}
 
 	_putchar('\n');
-
 }
