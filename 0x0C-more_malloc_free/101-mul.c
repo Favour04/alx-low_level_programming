@@ -44,7 +44,7 @@ int _atoi(char *s)
  * @num2: second number
  * Return: product of two numbers
  */
-int mul(int num1, int num2)
+int mul(long int num1, long int num2)
 {
 	return (num1 * num2);
 }
@@ -56,7 +56,7 @@ int mul(int num1, int num2)
  */
 int main(int argc, char *argv[])
 {
-	int num1, num2, result;
+	long int num1, num2, result;
 
 	if (argc != 3)
 	{
@@ -66,15 +66,9 @@ int main(int argc, char *argv[])
 
 	num1 = _atoi(argv[1]);
 	num2 = _atoi(argv[2]);
-
-	if (num1 == 0 || num2 == 0)
-	{
-		printf("Error\n");
-		return (98);
-	}
 	result = mul(num1, num2);
 
-	printf("%d\n", result);
+	printf("%ld\n", result);
 
 	return (0);
 }
